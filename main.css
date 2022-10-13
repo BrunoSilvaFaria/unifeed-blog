@@ -1,0 +1,209 @@
+/* === RESET === */
+* {
+    /* --- Estilos --- */
+    background: none;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    /* --- Display --- */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* === ALINHAMENTO === */
+.alinhamento {
+    /* --- display --- */
+    margin: auto;
+    /* --- Tamanho --- */
+    width: 90%;
+}
+
+/* === Flex === */
+.flex {
+    /* --- Display --- */
+    display: flex;
+    align-items: center;
+}
+
+/* === MENU === */
+.menu {
+    /* --- Display --- */
+    justify-content: space-between;
+    /* --- Tamanho --- */
+    height: 80px;
+}
+
+/* === Section Card === */
+.section__card {}
+
+.section__card__img {
+    width: 100%;
+}
+
+.section__card__title {
+    /* --- Estilos --- */
+    font-size: 1.9em;
+    font-weight: 700;
+    line-height: 1.4em;
+    /* --- Display --- */
+    margin-top: 20px;
+    /* --- Tamanho --- */
+/*     width: 340px;
+    background: red; */
+}
+
+.section__card__paragrafo {
+    /* --- Estilos --- */
+    color: #41424C;
+    font-size: 1em;
+    line-height: 1.7em;
+    /* --- Display --- */
+    margin-top: 15px;
+    /* --- Tamanho --- */
+    width: 90%;
+}
+
+/* === Avatar === */
+.card__avatar {
+    /* --- Display --- */
+    margin: 15px auto 40px auto;
+}
+
+.avatar__info {
+    /* --- Display --- */
+    margin-left: 15px;
+}
+
+.avatar__img {
+    height: 60px;
+}
+
+.avatar__nome {
+    font-size: 1.1em;
+    margin-bottom: 1px;
+}
+
+.avatar__cargo {
+    color: #41424C;
+}
+
+/* === Media Query === */
+@media(min-width: 500px){
+    .menu {
+        /* --- Tamanho --- */
+        height: 100px;
+    }
+
+    /* === Section Card === */
+    .section__card {
+        margin: auto;
+        max-width: 450px;
+    }
+
+    .section__card__img {
+        height: 200px;
+    }
+
+    .section__card__title {
+        /* --- Estilos --- */
+        line-height: 1.3em;
+        /* --- Display --- */
+        margin-top: 20px;
+    }
+
+    .section__card__paragrafo {
+        font-size: 0.8em;
+        /* --- Display --- */
+        margin-top: 5px;
+    }
+
+    /* === Avatar === */
+    .card__avatar {
+        /* --- Display --- */
+        margin: 15px auto 40px auto;
+    }
+
+    .avatar__info {
+        /* --- Display --- */
+        margin-left: 15px;
+    }
+
+    .avatar__img {
+        height: 60px;
+    }
+
+    .avatar__nome {
+        font-size: 1em;
+    }
+}
+
+@media(min-width: 1000px){
+    /* === ALINHAMENTO === */
+    .alinhamento {
+        /* --- Tamanho --- */
+        width: 85%;
+    }
+    /* === MENU === */
+    .menu {
+        /* --- Tamanho --- */
+        height: 120px;
+    }
+
+    /* === Section Card === */
+    .section__card {
+        
+    }
+
+    .section__card__img {
+        width: 100%;
+    }
+
+    .section__card__title {
+        /* --- Estilos --- */
+        font-size: 1.9em;
+        font-weight: 700;
+        line-height: 1.4em;
+        /* --- Display --- */
+        margin-top: 20px;
+        /* --- Tamanho --- */
+    /*     width: 340px;
+        background: red; */
+    }
+
+    .section__card__paragrafo {
+        /* --- Estilos --- */
+        color: #41424C;
+        font-size: 1em;
+        line-height: 1.7em;
+        /* --- Display --- */
+        margin-top: 15px;
+        /* --- Tamanho --- */
+        width: 90%;
+    }
+
+    /* === Avatar === */
+    .card__avatar {
+        /* --- Display --- */
+        margin: 15px auto 40px auto;
+    }
+
+    .avatar__info {
+        /* --- Display --- */
+        margin-left: 15px;
+    }
+
+    .avatar__img {
+        height: 60px;
+    }
+
+    .avatar__nome {
+        font-size: 1.1em;
+        margin-bottom: 1px;
+    }
+
+    .avatar__cargo {
+        color: #41424C;
+    }
+}
