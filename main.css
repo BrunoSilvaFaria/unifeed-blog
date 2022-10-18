@@ -5,6 +5,7 @@
     border: none;
     font-family: 'Manrope', sans-serif;
     text-decoration: none;
+    list-style: none;
     /* --- Display --- */
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +15,7 @@
 
 /* === ALINHAMENTO === */
 .alinhamento {
-    /* --- display --- */
+    /* --- Display --- */
     margin: auto;
     /* --- Tamanho --- */
     width: 90%;
@@ -32,15 +33,19 @@
     /* --- Display --- */
     justify-content: space-between;
     /* --- Tamanho --- */
-    height: 80px;
+    height: 100px;
+}
+
+.menu--show {
+    display: none;
 }
 
 /* === Section Card === */
-.section__card {}
 
 .section__card__img {
     width: 100%;
 }
+
 
 .section__card__title {
     /* --- Estilos --- */
@@ -49,9 +54,6 @@
     line-height: 1.4em;
     /* --- Display --- */
     margin-top: 20px;
-    /* --- Tamanho --- */
-/*     width: 340px;
-    background: red; */
 }
 
 .section__card__paragrafo {
@@ -77,29 +79,67 @@
 }
 
 .avatar__img {
+    /* --- Tamanho --- */
     height: 60px;
 }
 
 .avatar__nome {
+    /* --- Estilos --- */
     font-size: 1.1em;
+    /* --- Display --- */
     margin-bottom: 1px;
 }
 
-.avatar__cargo {
+.avatar__cargo,
+.footer--paragrafo {
     color: #41424C;
 }
 
-/* === Media Query === */
-@media(min-width: 500px){
+
+
+/* ===Media Query=== */
+@media(min-width: 500px) {
+    .alinhamento {
+        /* width: 80%; */
+    }
+
     .menu {
         /* --- Tamanho --- */
         height: 100px;
     }
 
+    .menu--icone {
+        display: none;
+    }
+
+    .menu--show {
+        display: flex;
+    }
+
+    .menu--show a {
+        /* --- Estilos --- */
+        color: #41424C;
+        /* --- Display --- */
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    .menu--show button {
+        /* --- Estilos --- */
+        background: #ee7c0d;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 700;
+        /* --- Display --- */
+        padding: 10px;
+    }
+
     /* === Section Card === */
     .section__card {
+        /* --- Display --- */
         margin: auto;
-        max-width: 450px;
+        /* --- Tamanho --- */
+        width: 450px;
     }
 
     .section__card__img {
@@ -114,37 +154,34 @@
     }
 
     .section__card__paragrafo {
+        /* --- Estilos --- */
         font-size: 0.8em;
         /* --- Display --- */
         margin-top: 5px;
     }
 
     /* === Avatar === */
-    .card__avatar {
-        /* --- Display --- */
-        margin: 15px auto 40px auto;
-    }
-
-    .avatar__info {
-        /* --- Display --- */
-        margin-left: 15px;
-    }
-
-    .avatar__img {
-        height: 60px;
-    }
-
     .avatar__nome {
         font-size: 1em;
     }
+
+    /* === Footer === */
+    footer {
+        /* --- Display --- */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-@media(min-width: 1000px){
+@media(min-width: 1000px) {
+
     /* === ALINHAMENTO === */
     .alinhamento {
         /* --- Tamanho --- */
         width: 85%;
     }
+
     /* === MENU === */
     .menu {
         /* --- Tamanho --- */
@@ -152,58 +189,148 @@
     }
 
     /* === Section Card === */
-    .section__card {
-        
+    .section__cards {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .section__card__img {
+    .section__card {
+        /* --- Display --- */
+        margin: 0;
+        /* --- Tamanho --- */
+        width: 270px;
+        /* max-width: 340px; */
+    }
+
+    .section__card--main {
+        /* --- Display --- */
+        display: flex;
+        margin-bottom: 80px;
+        /* --- Tamanho --- */
+        height: 315px;
         width: 100%;
+    }
+
+
+    .section__card__img {
+        width: 270px;
+        height: 280px;
     }
 
     .section__card__title {
         /* --- Estilos --- */
-        font-size: 1.9em;
-        font-weight: 700;
-        line-height: 1.4em;
-        /* --- Display --- */
-        margin-top: 20px;
+        font-size: 2em;
         /* --- Tamanho --- */
-    /*     width: 340px;
-        background: red; */
+        width: 95%;
+        max-width: 350px;
     }
 
     .section__card__paragrafo {
         /* --- Estilos --- */
-        color: #41424C;
-        font-size: 1em;
-        line-height: 1.7em;
-        /* --- Display --- */
-        margin-top: 15px;
+        font-size: 1.1em;
+    }
+
+    .section__card__img--main {
+        /* --- display --- */
+        margin-right: 60px;
+        /* --- tamanho --- */
+        width: 350px;
+        height: 315px;
+    }
+
+    .section__card__title--main {
         /* --- Tamanho --- */
-        width: 90%;
+        width: 700px;
     }
 
-    /* === Avatar === */
-    .card__avatar {
+    .section__card__paragrafo--main {
         /* --- Display --- */
-        margin: 15px auto 40px auto;
-    }
-
-    .avatar__info {
-        /* --- Display --- */
-        margin-left: 15px;
-    }
-
-    .avatar__img {
-        height: 60px;
+        margin-bottom: 10px;
     }
 
     .avatar__nome {
-        font-size: 1.1em;
-        margin-bottom: 1px;
+        font-size: 1.2em;
     }
 
     .avatar__cargo {
-        color: #41424C;
+        font-size: 1.1em;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    /* === Section Card === */
+    .section__card {
+        /* --- Display --- */
+        margin: 0;
+        /* --- Tamanho --- */
+        width: 340px;
+        /* max-width: 340px; */
+    }
+
+    .section__card--main {
+        /* --- Display --- */
+        display: flex;
+        margin-bottom: 80px;
+        /* --- Tamanho --- */
+        height: 300px;
+        width: 100%;
+    }
+
+
+    .section__card__img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .section__card__title {
+        /* --- Estilos --- */
+        font-size: 2.2em;
+        /* --- Tamanho --- */
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .section__card__paragrafo {
+        /* --- Estilos --- */
+        font-size: 1em;
+    }
+
+    .section__card__img--main {
+        /* --- display --- */
+        margin-right: 60px;
+        /* --- tamanho --- */
+        width: 350px;
+        height: 300px;
+    }
+
+    .section__card__title--main {
+        /* --- estilos -- */
+        font-size: 2.2em;
+        /* --- Tamanho --- */
+        width: 700px;
+    }
+
+    .section__card__paragrafo--main {
+        /* --- estilos -- */
+        font-size: 1.1em;
+        /* --- Display --- */
+        margin-bottom: 10px;
+        /* --- Tamanho --- */
+        /* width: 400px; */
+    }
+
+
+
+    .avatar__nome {
+        font-size: 1.2em;
+    }
+
+    .avatar__cargo {
+        font-size: 1.1em;
+    }
+
+    footer {
+        height: 50px;
     }
 }
