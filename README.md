@@ -1,29 +1,51 @@
+# Codewell - Order summary card solution
 
-# Welcome to Codewell! 👋
+Esta é a minha solução para o desafio [Unifeed Blog Page](https://www.codewell.cc/challenges/unifeed-blog-page--608d9d5c747bad001532bd7c).
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+## Contéudo
 
-Free or paid, all templates are high quality and will make great portfolio pieces.
-
-### I've completed the challenge, now what?
-
-We recommend using one of these two websites to deploy your projects
-
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
-
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+- [Desafio](#desafio)
+    - [Screenshot](#screenshot)
+    - [Demo](#demo)
+- [Meu processo](#meu-processo)
+    - [Ferramentas](#ferramentas)
+    - [O que eu aprendi](#o-que-eu-aprendi)
 
 
-### Submit your solution to Codewell
+## Desafio
+Foi proposto recriar o seguinte site, fazendo o mais semelhante possível, a partir de um guia de estilo fornecido.
 
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
+![](/Design/Blog - Desktop View.png)
 
-### Join our community on Slack
+## Screenshot da minha solução:
 
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
+![](/Design/solucao-desktop.png)
 
 
-### Fonts Used
-https://fonts.google.com/specimen/Manrope
+## Demo da minha solução:
+
+- [Demo do desafio Unifeed](https://brunosilvafaria.github.io/unifeed-blog/).
+
+## Processo de desenvolvimento:
+- Criar a versão mobile;
+- Ajustar para tablet, em seguida para desktop;
+- Verificar o estilo, procurando ser pixel perfect;
+- Refatorar o CSS.
+
+### Ferramentas
+
+- HTML5
+- CSS3
+- Arquitetura BEM
+- Mobile-first
+- [Google Fonts](https://fonts.google.com)
+- [Atom](https://atom.io/) - Editor de texto
+- [Adobe Color](https://color.adobe.com/pt/create/color-wheel) - Paleta de cores
+- [FireFox](https://www.mozilla.org/pt-BR/firefox/new/) - Navegador utilizado para visualização e desenvolvimento do site
+
+
+### O que eu aprendi:
+
+- Reforcei uso de flexbox;
+- Reutilização de código;
+- Desenvolvimento responsivo;
